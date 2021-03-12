@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
+<!--<link rel="stylesheet" href="map.css">-->
 <body style="margin: 0">
-
 <head>
     <title>Demo @immfly/flights-map</title>
     <script src="node_modules/@immfly/flights-map/lib.js"></script>
@@ -155,7 +155,8 @@
     ];
     var config = {
         colors: {
-            background: '#F5F5F5',
+            land: '#BDBDBD', // Specifies the colors of the land.
+            background: '#F5F5F5', // Specifies the color of the map background. (NOT WORKING!)
         },
         texts: {
             markersFontSize: 12
@@ -165,6 +166,6 @@
     document.getElementsByTagName('flights-map')[0].flights = flights;
 
 </script>
-<link rel="stylesheet" href="map.css">
+
 </body>
 </html>
