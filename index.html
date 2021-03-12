@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body style="margin: 0;">
+<body style="margin: 0">
 
 <head>
     <title>Demo @immfly/flights-map</title>
@@ -152,9 +152,19 @@
             state: 0,
             color: '#DA291C'
         }
-    ]
-    document.getElementsByTagName('flights-map')[0].flights = flights
-</script>
+    ];
+    var config = {
+        colors: {
+            background: '#F5F5F5',
+        },
+        texts: {
+            markersFontSize: 12
+        }
+    }
+    document.getElementsByTagName('flights-map')[0].config = config;
+    document.getElementsByTagName('flights-map')[0].flights = flights;
 
+</script>
+<link rel="stylesheet" href="map.css">
 </body>
 </html>
