@@ -12,11 +12,27 @@
 </div>
 
 <script>
+    // Domestic 1 color
+    // International another color
     var flights = [
         {
             name: 'PEK → HKG',
             origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             destination: { city: 'Hong Kong', latitude: 22.308889, longitude: 113.914444 },
+            state: 1,
+            color: '#F60'
+        },
+        {
+            name: 'HKG → PEK',
+            origin: { city: 'Hong Kong', latitude: 22.308889, longitude: 113.914444 },
+            destination: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
+            state: 1,
+            color: '#F60'
+        },
+        {
+            name: 'PEK → SYX',
+            origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
+            destination: { city: 'Sanya Phoenix', latitude: 18.302778, longitude: 109.412222 },
             state: 1,
             color: '#F60'
         },
@@ -38,6 +54,13 @@
             name: 'PEK → SHA',
             origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             destination: { city: 'Shanghai Hongqiao', latitude: 31.198056, longitude: 121.336389 },
+            state: 1,
+            color: '#F60'
+        },
+        {
+            name: 'SZX → PEK',
+            origin: { city: 'Shenzhen', latitude: 22.639444, longitude: 113.810833 },
+            destination: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             state: 1,
             color: '#F60'
         },
