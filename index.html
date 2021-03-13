@@ -12,204 +12,197 @@
 </div>
 
 <script>
-    // Domestic 1 color
-    // International another color
+    // Domestic 1 color #0096FF
+    // International another color #D6893D
     var flights = [
-        {
-            name: 'PEK → HKG',
-            origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
-            destination: { city: 'Hong Kong', latitude: 22.308889, longitude: 113.914444 },
-            state: 1,
-            color: '#F60'
-        },
         {
             name: 'HKG → PEK',
             origin: { city: 'Hong Kong', latitude: 22.308889, longitude: 113.914444 },
             destination: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             state: 1,
-            color: '#F60'
+            color: '#D6893D'
         },
         {
-            name: 'PEK → SYX',
-            origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
-            destination: { city: 'Sanya Phoenix', latitude: 18.302778, longitude: 109.412222 },
+            name: 'SYX → PEK',
+            origin: { city: 'Sanya Phoenix', latitude: 18.302778, longitude: 109.412222 },
+            destination: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             state: 1,
-            color: '#F60'
+            color: '#0096FF'
         },
         {
             name: 'PEK → LAX',
             origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             destination: { city: 'Los Angeles', latitude: 33.9425, longitude: -118.408056 },
             state: 1,
-            color: '#F60'
+            color: '#D6893D'
         },
         {
             name: 'PEK → HAN',
             origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             destination: { city: 'Hanoi Noi Bai', latitude: 21.221111, longitude: 105.807222 },
             state: 1,
-            color: '#F60'
+            color: '#D6893D'
         },
         {
             name: 'PEK → SHA',
             origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             destination: { city: 'Shanghai Hongqiao', latitude: 31.198056, longitude: 121.336389 },
             state: 1,
-            color: '#F60'
+            color: '#0096FF'
         },
         {
             name: 'SZX → PEK',
             origin: { city: 'Shenzhen', latitude: 22.639444, longitude: 113.810833 },
             destination: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             state: 1,
-            color: '#F60'
+            color: '#0096FF'
         },
         {
             name: 'PEK → CAN',
             origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             destination: { city: 'Guangzhou Baiyun', latitude: 23.3925, longitude: 113.298889 },
             state: 1,
-            color: '#F60'
+            color: '#0096FF'
         },
         {
-            name: 'PEK → SEA',
-            origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
-            destination: { city: 'Seattle-Tacoma', latitude: 47.449, longitude: -122.309306 },
+            name: 'SEA → PEK',
+            origin: { city: 'Seattle-Tacoma', latitude: 47.449, longitude: -122.309306 },
+            destination: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             state: 1,
-            color: '#F60'
+            color: '#D6893D'
         },
         {
             name: 'SNA → SEA',
             origin: { city: 'John-Wayne Orange County', latitude: 33.675556, longitude: -117.868333 },
             destination: { city: 'Seattle-Tacoma', latitude: 47.449, longitude: -122.309306 },
             state: 1,
-            color: '#F60'
+            color: '#0096FF'
         },
         {
             name: 'LAX → MDW',
             origin: { city: 'Los Angeles', latitude: 33.9425, longitude: -118.408056 },
             destination: { city: 'Chicago Midway', latitude: 41.786111, longitude: -87.7525 },
             state: 1,
-            color: '#F60'
+            color: '#0096FF'
         },
         {
             name: 'CMI → ORD',
             origin: { city: 'Champaign', latitude: 40.039167, longitude: -88.278056 },
             destination: { city: "Chicago O'Hare", latitude: 41.978611, longitude: -87.904722 },
             state: 1,
-            color: '#F60'
+            color: '#0096FF'
         },
         {
-            name: 'LAX → ATL',
-            origin: { city: 'Los Angeles', latitude: 33.9425, longitude: -118.408056 },
-            destination: { city: "Atlanta Int'l", latitude: 33.636667, longitude: -84.428056 },
+            name: 'ATL → LAX',
+            origin: { city: "Atlanta Int'l", latitude: 33.636667, longitude: -84.428056 },
+            destination: { city: 'Los Angeles', latitude: 33.9425, longitude: -118.408056 },
             state: 1,
-            color: '#F60'
+            color: '#0096FF'
         },
         {
             name: 'LAX → IAH',
             origin: { city: 'Los Angeles', latitude: 33.9425, longitude: -118.408056 },
             destination: { city: "Houston George-Bush", latitude: 29.984444, longitude: -95.341389 },
             state: 1,
-            color: '#F60'
+            color: '#0096FF'
         },
         {
             name: 'ORD → SEA',
             origin: { city: "Chicago O'Hare", latitude: 41.978611, longitude: -87.904722 },
             destination: { city: 'Seattle-Tacoma', latitude: 47.449, longitude: -122.309306 },
             state: 1,
-            color: '#F60'
+            color: '#0096FF'
         },
         {
             name: 'PEK → SIN',
             origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             destination: { city: 'Singapore', latitude: 1.359167, longitude: 103.989444},
             state: 1,
-            color: '#F60'
+            color: '#D6893D'
         },
         {
             name: 'PEK → KWE',
             origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             destination: { city: 'Guizhou', latitude: 26.538611, longitude: 106.800833},
             state: 1,
-            color: '#F60'
+            color: '#0096FF'
         },
         {
             name: 'HAN → SGN',
             origin: { city: 'Hanoi Noi Bai', latitude: 21.221111, longitude: 105.807222 },
             destination: { city: 'Ho Chi Minh City Tan Son Nhat', latitude: 10.818889, longitude: 106.651944},
             state: 1,
-            color: '#F60'
+            color: '#0096FF'
         },
         {
             name: 'SGN → REP',
             origin: { city: 'Ho Chi Minh City Tan Son Nhat', latitude: 10.818889, longitude: 106.651944},
             destination: { city: 'Siem Reap', latitude: 13.410556, longitude: 103.812778},
             state: 1,
-            color: '#F60'
+            color: '#D6893D'
         },
         {
             name: 'REP → HAN',
             origin: { city: 'Siem Reap', latitude: 13.410556, longitude: 103.812778},
             destination: { city: 'Hanoi Noi Bai', latitude: 21.221111, longitude: 105.807222 },
             state: 1,
-            color: '#F60'
+            color: '#D6893D'
         },
         {
             name: 'PEK → CPH',
             origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             destination: { city: 'Copenhagen', latitude: 55.618056, longitude: 12.656111 },
             state: 1,
-            color: '#F60'
+            color: '#D6893D'
         },
         {
             name: 'CPH → HEL',
             origin: { city: 'Copenhagen', latitude: 55.618056, longitude: 12.656111 },
-            destination: { city: 'Vantaa', latitude: 60.317222, longitude: 24.963333 },
+            destination: { city: 'Helsinki Vantaa', latitude: 60.317222, longitude: 24.963333 },
             state: 1,
-            color: '#F60'
+            color: '#D6893D'
         },
         {
             name: 'BGO → CPH',
             origin: { city: 'Bergen', latitude: 60.293611, longitude: 5.218056 },
             destination: { city: 'Copenhagen', latitude: 55.618056, longitude: 12.656111 },
             state: 1,
-            color: '#F60'
+            color: '#D6893D'
         },
         {
             name: 'PEK → XIY',
             origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             destination: { city: "Xi'an Xianyang", latitude: 34.447222, longitude: 108.751667 },
             state: 1,
-            color: '#F60'
+            color: '#0096FF'
         },
         {
             name: 'PEK → XNN',
             origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             destination: { city: 'Xining Caojiabao', latitude: 36.528333, longitude: 102.046944 },
             state: 1,
-            color: '#F60'
+            color: '#0096FF'
         },
         {
-            name: 'PEK → LHW',
-            origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
-            destination: { city: 'Lanzhou', latitude: 36.5075, longitude: 103.619444 },
+            name: 'LHW → PEK',
+            origin: { city: 'Lanzhou', latitude: 36.5075, longitude: 103.619444 },
+            destination: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             state: 1,
-            color: '#F60'
+            color: '#0096FF'
         },
         {
             name: 'PEK → HLD',
             origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             destination: { city: "Hai La'er", latitude: 49.204997, longitude: 119.825 },
             state: 1,
-            color: '#F60'
+            color: '#0096FF'
         },
         {
-            name: 'PEK → NZH',
-            origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
-            destination: { city: "Man Zhouli", latitude: 49.566111, longitude: 117.332222 },
+            name: 'MZH → PEK',
+            origin: { city: "Man Zhouli", latitude: 49.566111, longitude: 117.332222 },
+            destination: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             state: 1,
-            color: '#F60'
+            color: '#0096FF'
         },
     ];
     var config = {
