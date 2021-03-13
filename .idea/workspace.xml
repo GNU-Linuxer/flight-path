@@ -42,11 +42,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615536050637</updated>
-      <workItem from="1615536052341" duration="3767000" />
+      <workItem from="1615536052341" duration="4785000" />
     </task>
+    <task id="LOCAL-00001" summary="Change background color">
+      <created>1615593989742</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615593989742</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Change background color" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change background color" />
   </component>
 </project>
