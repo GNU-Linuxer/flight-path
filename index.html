@@ -24,14 +24,14 @@
         },
         {
             name: 'SYX → PEK',
-            origin: { city: 'Sanya Phoenix', latitude: 18.302778, longitude: 109.412222 },
+            origin: { city: 'Sanya', latitude: 18.302778, longitude: 109.412222 },
             destination: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             state: 1,
             color: '#0096FF'
         },
         {
             name: 'XMN → PEK',
-            origin: { city: 'Xiamen Gaoqi', latitude: 24.543889, longitude: 118.1275 },
+            origin: { city: 'Xiamen', latitude: 24.543889, longitude: 118.1275 },
             destination: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
             state: 1,
             color: '#0096FF'
@@ -46,7 +46,7 @@
         {
             name: 'PEK → HAN',
             origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
-            destination: { city: 'Hanoi Noi Bai', latitude: 21.221111, longitude: 105.807222 },
+            destination: { city: 'Hanoi', latitude: 21.221111, longitude: 105.807222 },
             state: 1,
             color: '#D6893D'
         },
@@ -74,7 +74,7 @@
         {
             name: 'PEK → CAN',
             origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
-            destination: { city: 'Guangzhou Baiyun', latitude: 23.3925, longitude: 113.298889 },
+            destination: { city: 'Guangzhou', latitude: 23.3925, longitude: 113.298889 },
             state: 1,
             color: '#0096FF'
         },
@@ -95,13 +95,13 @@
         {
             name: 'SNA → OAK',
             origin: { city: 'John-Wayne Orange County', latitude: 33.675556, longitude: -117.868333 },
-            destination: { city: 'Oakland County', latitude: 37.721389, longitude: -122.220833 },
+            destination: { city: 'Oakland', latitude: 37.721389, longitude: -122.220833 },
             state: 1,
             color: '#0096FF'
         },
         {
             name: 'OAK → SEA',
-            origin: { city: 'Oakland County', latitude: 37.721389, longitude: -122.220833 },
+            origin: { city: 'Oakland', latitude: 37.721389, longitude: -122.220833 },
             destination: { city: 'Seattle-Tacoma', latitude: 47.449, longitude: -122.309306 },
             state: 1,
             color: '#0096FF'
@@ -157,14 +157,14 @@
         },
         {
             name: 'HAN → SGN',
-            origin: { city: 'Hanoi Noi Bai', latitude: 21.221111, longitude: 105.807222 },
-            destination: { city: 'Ho Chi Minh City Tan Son Nhat', latitude: 10.818889, longitude: 106.651944},
+            origin: { city: 'Hanoi', latitude: 21.221111, longitude: 105.807222 },
+            destination: { city: 'Ho Chi Minh City', latitude: 10.818889, longitude: 106.651944},
             state: 1,
             color: '#0096FF'
         },
         {
             name: 'SGN → REP',
-            origin: { city: 'Ho Chi Minh City Tan Son Nhat', latitude: 10.818889, longitude: 106.651944},
+            origin: { city: 'Ho Chi Minh City', latitude: 10.818889, longitude: 106.651944},
             destination: { city: 'Siem Reap', latitude: 13.410556, longitude: 103.812778},
             state: 1,
             color: '#D6893D'
@@ -172,7 +172,7 @@
         {
             name: 'REP → HAN',
             origin: { city: 'Siem Reap', latitude: 13.410556, longitude: 103.812778},
-            destination: { city: 'Hanoi Noi Bai', latitude: 21.221111, longitude: 105.807222 },
+            destination: { city: 'Hanoi', latitude: 21.221111, longitude: 105.807222 },
             state: 1,
             color: '#D6893D'
         },
@@ -186,7 +186,7 @@
         {
             name: 'CPH → HEL',
             origin: { city: 'Copenhagen', latitude: 55.618056, longitude: 12.656111 },
-            destination: { city: 'Helsinki Vantaa', latitude: 60.317222, longitude: 24.963333 },
+            destination: { city: 'Helsinki-Vantaa', latitude: 60.317222, longitude: 24.963333 },
             state: 1,
             color: '#D6893D'
         },
@@ -207,7 +207,7 @@
         {
             name: 'PEK → XNN',
             origin: { city: 'Beijing Capital', latitude: 40.08, longitude: 116.584444 },
-            destination: { city: 'Xining Caojiabao', latitude: 36.528333, longitude: 102.046944 },
+            destination: { city: 'Xining', latitude: 36.528333, longitude: 102.046944 },
             state: 1,
             color: '#0096FF'
         },
@@ -240,7 +240,13 @@
         },
         texts: {
             markersFontSize: 12
-        }
+        },
+        showMarkers: true, // Specifies if the default markers have to be shown.
+        dataToShowOnMarkers: [
+            { id: 'name', text: 'Flight' },
+            { id: 'origin.city', text: 'Origin' },
+            { id: 'destination.city', text: 'Destination' }
+        ]
     }
     document.getElementsByTagName('flights-map')[0].config = config;
     document.getElementsByTagName('flights-map')[0].flights = flights;
