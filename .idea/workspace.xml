@@ -4,13 +4,6 @@
     <list default="true" id="3ee90418-c582-4c80-bfc6-b5b325f7b310" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@immfly/flights-map/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@immfly/flights-map/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/babel-polyfill/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/babel-polyfill/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/babel-runtime/node_modules/regenerator-runtime/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/node_modules/regenerator-runtime/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/babel-runtime/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/core-js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/regenerator-runtime/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/regenerator-runtime/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +47,7 @@
       <workItem from="1615704669488" duration="499000" />
       <workItem from="1615785830784" duration="469000" />
       <workItem from="1615914570789" duration="1143000" />
-      <workItem from="1632154488978" duration="2255000" />
+      <workItem from="1632154488978" duration="3005000" />
     </task>
     <task id="LOCAL-00001" summary="Change background color">
       <created>1615593989742</created>
